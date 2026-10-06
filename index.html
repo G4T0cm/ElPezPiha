@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>La Cueva</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script type="importmap">
+  { "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  } }
+  </script>
+</head>
+<body>
+  <canvas id="game"></canvas>
+  <div id="vignette"></div>
+  <div id="scanlines"></div>
+  <div id="crosshair"></div>
+  <div id="prompt" data-ui="prompt"></div>
+
+  <div id="pause" class="hidden"><p data-ui="pause"></p></div>
+
+  <div id="reader" class="hidden">
+    <div id="reader-dim"></div>
+    <div id="book-stage"><div id="book" class="closed"></div></div>
+    <div id="reader-hud">
+      <span id="hud-page"></span>
+      <span class="hud-mid" data-ui="pages"></span>
+      <span class="hud-right">
+        <label><span data-ui="goto"></span> <input id="goto" type="text" inputmode="numeric" maxlength="4" autocomplete="off"></label>
+        <button id="btn-close" data-ui="close"></button>
+      </span>
+    </div>
+  </div>
+
+  <div id="title">
+    <h1 data-ui="title"></h1>
+    <h2 data-ui="subtitle"></h2>
+    <p id="start" data-ui="loading"></p>
+    <p id="controls" data-ui="controls"></p>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
