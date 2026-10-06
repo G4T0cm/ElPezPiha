@@ -15,7 +15,7 @@ export const CONFIG = {
   // ---------- AUDIO ---------- (src vacío o archivo inexistente = se ignora)
   audio: {
     master: 1,
-    ambience: { src: 'assets/audio/cave_ambience.mp3', volume: 0.5 },
+    ambience: { src: 'assets/audio/cave.mp3', volume: 0.5 },
     wind:     { src: 'assets/audio/wind.mp3',          volume: 0.3 },
     drips:    { srcs: ['assets/audio/drip1.mp3', 'assets/audio/drip2.mp3'], volume: 0.4, minDelay: 2.5, maxDelay: 8 },
     interact: { src: 'assets/audio/interact.mp3',      volume: 0.7 },
@@ -55,7 +55,7 @@ export const CONFIG = {
   // ---------- TEXTOS DE LA INTERFAZ ----------
   ui: {
     title: 'LA CUEVA',
-    subtitle: 'una exposición interactiva',
+    subtitle: 'Del Pez Piha',
     loading: 'CARGANDO...',
     start: '[ CLICK PARA ENTRAR ]',
     controls: 'WASD MOVER   RATON MIRAR   ESC PAUSA',
