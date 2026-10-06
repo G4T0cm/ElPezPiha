@@ -55,7 +55,7 @@ export const CONFIG = {
   // ---------- TEXTOS DE LA INTERFAZ ----------
   ui: {
     title: 'LA CUEVA',
-    subtitle: 'Del Pez Piha',
+    subtitle: 'Del Pez Piha...',
     loading: 'CARGANDO...',
     start: '[ CLICK PARA ENTRAR ]',
     controls: 'WASD MOVER   RATON MIRAR   ESC PAUSA',
